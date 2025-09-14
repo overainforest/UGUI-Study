@@ -105,5 +105,6 @@ public class PlayerModel
             //向外部传递自己，this即此类的单例，即PlayerModel.Data
             dataUpdate(this);
         }
+        //DataUpdated?.Invoke(this);  更简洁安全的写法，等同于 if (DataUpdated != null) DataUpdated(this);
     }
 }
