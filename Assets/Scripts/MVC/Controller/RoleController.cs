@@ -16,7 +16,7 @@ public class RoleController : MonoBehaviour
     {
         if(controller == null)
         {
-            GameObject res = Resources.Load<GameObject>("UI/RolePanel");
+            GameObject res = Resources.Load<GameObject>("UI/MVC/RolePanel");
             GameObject obj = Instantiate(res);
             obj.transform.SetParent(GameObject.Find("Canvas").transform, false);
             controller = obj.GetComponent<RoleController>();

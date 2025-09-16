@@ -23,7 +23,7 @@ public class RolePanel : MonoBehaviour
     {
         if(panel==null)
         {
-            GameObject res = Resources.Load<GameObject>("UI/RolePanel");
+            GameObject res = Resources.Load<GameObject>("UI/Normal/RolePanel");
             GameObject obj = Instantiate(res);
             panel = obj.GetComponent<RolePanel>();
             obj.transform.SetParent(GameObject.Find("Canvas").transform, false);

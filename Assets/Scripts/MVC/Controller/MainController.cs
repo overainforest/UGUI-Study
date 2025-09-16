@@ -26,7 +26,7 @@ public class MainController : MonoBehaviour
         if(controller == null)
         {
             //将位于UI文件夹的Mainpanel作为游戏物体赋值给res
-            GameObject res = Resources.Load<GameObject>("UI/MainPanel");
+            GameObject res = Resources.Load<GameObject>("UI/MVC/MainPanel");
             //创键游戏实例，将游戏实例指定为res
             GameObject obj = Instantiate(res);
             //为obj指定父物体，父物体是查找到的名为Canvas的游戏物体，且不随父物体缩放。

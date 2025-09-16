@@ -26,7 +26,7 @@ public class MainPanel : MonoBehaviour
         //ÏÔÊ¾Ö÷Ãæ°å
         if(panel == null)
         {
-            GameObject res = Resources.Load<GameObject>("UI/MainPanel");
+            GameObject res = Resources.Load<GameObject>("UI/Normal/MainPanel");
             GameObject obj = Instantiate(res);
             obj.transform.SetParent(GameObject.Find("Canvas").transform, false);
 
